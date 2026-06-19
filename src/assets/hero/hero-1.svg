@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" fill="none">
+  <rect width="1200" height="500" fill="#ffffff"/>
+  <circle cx="950" cy="120" r="180" fill="#228be6" fill-opacity="0.08"/>
+  <circle cx="1050" cy="380" r="120" fill="#ea580c" fill-opacity="0.1"/>
+  <rect x="620" y="80" width="480" height="340" rx="24" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="660" y="120" width="400" height="240" rx="12" fill="#111214"/>
+  <rect x="680" y="140" width="360" height="200" rx="8" fill="#1a1b1e"/>
+  <rect x="720" y="380" width="200" height="12" rx="6" fill="#d1d5db"/>
+  <rect x="820" y="400" width="80" height="8" rx="4" fill="#ea580c"/>
+  <text x="80" y="180" font-family="Montserrat, sans-serif" font-size="48" font-weight="700" fill="#111214">Gaming</text>
+  <text x="80" y="240" font-family="Montserrat, sans-serif" font-size="48" font-weight="700" fill="#ea580c">Laptops</text>
+  <text x="80" y="290" font-family="Heebo, sans-serif" font-size="20" fill="#868e96">RTX Series " Up to 30% Off</text>
+</svg>

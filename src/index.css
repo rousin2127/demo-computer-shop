@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-sans: "Heebo", "Montserrat", sans-serif;
+  --color-brand: #ea580c;
+  --color-brand-hover: #c2410c;
+  --color-primary: #228be6;
+  --color-primary-hover: #1c7ed6;
+  --color-surface: #f9f9f7;
+  --color-dark: #111214;
+  --color-dark-card: #202124;
+  --color-text: #000000;
+  --color-dimmed: #868e96;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-text font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  @keyframes lightning-blink {
+    0%,
+    40% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50%,
+    90% {
+      opacity: 0.15;
+      transform: scale(0.92);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-lightning-blink {
+    animation: lightning-blink 1s ease-in-out infinite;
+    animation-delay: 0.2s;
+  }
+}

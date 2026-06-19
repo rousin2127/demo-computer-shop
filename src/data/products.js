@@ -1,0 +1,308 @@
+export const categories = [
+  { id: "laptops", name: "Laptops", icon: "💻", count: 24 },
+  { id: "desktops", name: "Desktops", icon: "🖥️", count: 18 },
+  { id: "monitors", name: "Monitors", icon: "🖵", count: 15 },
+  { id: "components", name: "PC Components", icon: "🔧", count: 32 },
+  { id: "peripherals", name: "Peripherals", icon: "⌨️", count: 28 },
+  { id: "networking", name: "Networking", icon: "📡", count: 12 },
+  { id: "storage", name: "Storage", icon: "💾", count: 20 },
+  { id: "gaming", name: "Gaming", icon: "🎮", count: 16 },
+];
+
+export const products = [
+  {
+    id: 1,
+    name: "ASUS ROG Strix G16 Gaming Laptop",
+    slug: "asus-rog-strix-g16",
+    category: "laptops",
+    brand: "ASUS",
+    price: 189999,
+    originalPrice: 215000,
+    rating: 4.8,
+    reviews: 124,
+    inStock: true,
+    badge: "Hot Deal",
+    specs: ["Intel Core i7-13650HX", "RTX 4060 8GB", "16GB DDR5", "512GB NVMe SSD", '16" FHD 165Hz'],
+    description: "Powerful gaming laptop with RTX 4060 graphics, perfect for gaming and content creation. Features a stunning 165Hz display and advanced cooling system.",
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&h=400&fit=crop",
+  },
+  {
+    id: 2,
+    name: "MacBook Air M3 15-inch",
+    slug: "macbook-air-m3-15",
+    category: "laptops",
+    brand: "Apple",
+    price: 164999,
+    originalPrice: null,
+    rating: 4.9,
+    reviews: 89,
+    inStock: true,
+    badge: "New",
+    specs: ["Apple M3 Chip", "8GB Unified Memory", "256GB SSD", '15.3" Liquid Retina', "18hr Battery"],
+    description: "Incredibly thin and light laptop with the blazing-fast M3 chip. Perfect for students and professionals who need all-day battery life.",
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&h=400&fit=crop",
+  },
+  {
+    id: 3,
+    name: "Dell XPS 15 OLED Laptop",
+    slug: "dell-xps-15-oled",
+    category: "laptops",
+    brand: "Dell",
+    price: 225000,
+    originalPrice: 245000,
+    rating: 4.7,
+    reviews: 56,
+    inStock: true,
+    badge: "Sale",
+    specs: ["Intel Core i7-13700H", "RTX 4050 6GB", "16GB DDR5", "1TB SSD", '15.6" 3.5K OLED'],
+    description: "Premium ultrabook with stunning OLED display and exceptional build quality for creative professionals.",
+    image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=600&h=400&fit=crop",
+  },
+  {
+    id: 4,
+    name: "HP Pavilion Gaming Desktop",
+    slug: "hp-pavilion-gaming-desktop",
+    category: "desktops",
+    brand: "HP",
+    price: 89999,
+    originalPrice: 105000,
+    rating: 4.5,
+    reviews: 42,
+    inStock: true,
+    badge: "Best Value",
+    specs: ["AMD Ryzen 5 5600G", "16GB DDR4", "512GB SSD", "AMD Radeon Graphics", "Windows 11"],
+    description: "Affordable gaming desktop ready for upgrade. Great entry point for PC gaming and everyday computing.",
+    image: "https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=600&h=400&fit=crop",
+  },
+  {
+    id: 5,
+    name: "Custom Gaming PC - RTX 4070 Ti",
+    slug: "custom-gaming-pc-rtx-4070ti",
+    category: "desktops",
+    brand: "Custom Build",
+    price: 285000,
+    originalPrice: null,
+    rating: 4.9,
+    reviews: 31,
+    inStock: true,
+    badge: "Premium",
+    specs: ["Intel i7-14700K", "RTX 4070 Ti 12GB", "32GB DDR5", "1TB NVMe", "750W Gold PSU"],
+    description: "Hand-built gaming powerhouse with premium components. Handles 4K gaming and heavy workloads with ease.",
+    image: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=600&h=400&fit=crop",
+  },
+  {
+    id: 6,
+    name: 'Samsung Odyssey G7 32" Curved Monitor',
+    slug: "samsung-odyssey-g7-32",
+    category: "monitors",
+    brand: "Samsung",
+    price: 64999,
+    originalPrice: 78000,
+    rating: 4.6,
+    reviews: 78,
+    inStock: true,
+    badge: "Sale",
+    specs: ['32" QHD 240Hz', "1000R Curved", "1ms Response", "HDR600", "G-Sync Compatible"],
+    description: "Immersive curved gaming monitor with blazing 240Hz refresh rate for competitive gaming.",
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&h=400&fit=crop",
+  },
+  {
+    id: 7,
+    name: 'LG UltraFine 27" 4K Monitor',
+    slug: "lg-ultrafine-27-4k",
+    category: "monitors",
+    brand: "LG",
+    price: 52000,
+    originalPrice: null,
+    rating: 4.7,
+    reviews: 45,
+    inStock: true,
+    badge: null,
+    specs: ['27" 4K UHD', "IPS Panel", "99% sRGB", "USB-C 96W", "Height Adjustable"],
+    description: "Professional 4K monitor ideal for photo editing, video production, and crisp text rendering.",
+    image: "https://images.unsplash.com/photo-1616763355543-1f6065e9d2b4?w=600&h=400&fit=crop",
+  },
+  {
+    id: 8,
+    name: "AMD Ryzen 7 7800X3D Processor",
+    slug: "amd-ryzen-7-7800x3d",
+    category: "components",
+    brand: "AMD",
+    price: 42999,
+    originalPrice: 48000,
+    rating: 4.9,
+    reviews: 203,
+    inStock: true,
+    badge: "Top Seller",
+    specs: ["8 Cores / 16 Threads", "4.2GHz Base", "96MB Cache", "AM5 Socket", "105W TDP"],
+    description: "The ultimate gaming CPU with 3D V-Cache technology. Dominates in gaming benchmarks.",
+    image: "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=600&h=400&fit=crop",
+  },
+  {
+    id: 9,
+    name: "NVIDIA GeForce RTX 4080 Super",
+    slug: "nvidia-rtx-4080-super",
+    category: "components",
+    brand: "NVIDIA",
+    price: 165000,
+    originalPrice: null,
+    rating: 4.8,
+    reviews: 67,
+    inStock: false,
+    badge: "Out of Stock",
+    specs: ["16GB GDDR6X", "Ray Tracing", "DLSS 3", "PCIe 4.0", "320W TDP"],
+    description: "Flagship graphics card for 4K gaming and AI workloads. Limited stock — pre-order available.",
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=600&h=400&fit=crop",
+  },
+  {
+    id: 10,
+    name: "Corsair Vengeance 32GB DDR5 RAM",
+    slug: "corsair-vengeance-32gb-ddr5",
+    category: "components",
+    brand: "Corsair",
+    price: 12500,
+    originalPrice: 14000,
+    rating: 4.6,
+    reviews: 156,
+    inStock: true,
+    badge: null,
+    specs: ["32GB (2x16GB)", "DDR5-6000", "CL36", "RGB Lighting", "XMP 3.0"],
+    description: "High-performance DDR5 memory kit with RGB lighting for gaming builds.",
+    image: "https://images.unsplash.com/photo-1562976540-1502c2145186?w=600&h=400&fit=crop",
+  },
+  {
+    id: 11,
+    name: "Logitech G Pro X Superlight 2",
+    slug: "logitech-g-pro-x-superlight-2",
+    category: "peripherals",
+    brand: "Logitech",
+    price: 15999,
+    originalPrice: null,
+    rating: 4.8,
+    reviews: 312,
+    inStock: true,
+    badge: "Popular",
+    specs: ["60g Weight", "HERO 2 Sensor", "32K DPI", "95hr Battery", "Wireless"],
+    description: "Ultra-lightweight wireless gaming mouse trusted by esports professionals worldwide.",
+    image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&h=400&fit=crop",
+  },
+  {
+    id: 12,
+    name: "Keychron Q1 Pro Mechanical Keyboard",
+    slug: "keychron-q1-pro",
+    category: "peripherals",
+    brand: "Keychron",
+    price: 18999,
+    originalPrice: 22000,
+    rating: 4.7,
+    reviews: 89,
+    inStock: true,
+    badge: "Sale",
+    specs: ["Gateron Pro Switches", "Aluminum Body", "Hot-Swappable", "Bluetooth + Wired", "QMK/VIA"],
+    description: "Premium mechanical keyboard with exceptional typing feel and wireless connectivity.",
+    image: "https://images.unsplash.com/photo-1511467687858-23d96c4eada?w=600&h=400&fit=crop",
+  },
+  {
+    id: 13,
+    name: "TP-Link Archer AX73 WiFi 6 Router",
+    slug: "tp-link-archer-ax73",
+    category: "networking",
+    brand: "TP-Link",
+    price: 12999,
+    originalPrice: 15500,
+    rating: 4.5,
+    reviews: 234,
+    inStock: true,
+    badge: null,
+    specs: ["WiFi 6 AX5400", "Dual-Band", "6 Antennas", "2.5G WAN Port", "HomeShield"],
+    description: "High-speed WiFi 6 router for homes and small offices with excellent coverage.",
+    image: "https://images.unsplash.com/photo-1606904825271-e1c95b1e837e?w=600&h=400&fit=crop",
+  },
+  {
+    id: 14,
+    name: "Samsung 990 Pro 2TB NVMe SSD",
+    slug: "samsung-990-pro-2tb",
+    category: "storage",
+    brand: "Samsung",
+    price: 22999,
+    originalPrice: 26500,
+    rating: 4.9,
+    reviews: 445,
+    inStock: true,
+    badge: "Top Seller",
+    specs: ["2TB Capacity", "7450 MB/s Read", "PCIe 4.0", "M.2 2280", "5yr Warranty"],
+    description: "Blazing fast NVMe SSD for gaming, content creation, and professional workloads.",
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d08f3f8e?w=600&h=400&fit=crop",
+  },
+  {
+    id: 15,
+    name: "Sony WH-1000XM5 Headphones",
+    slug: "sony-wh-1000xm5",
+    category: "peripherals",
+    brand: "Sony",
+    price: 34999,
+    originalPrice: 42000,
+    rating: 4.8,
+    reviews: 567,
+    inStock: true,
+    badge: "Sale",
+    specs: ["Industry-Leading ANC", "30hr Battery", "Multipoint BT", "Hi-Res Audio", "Foldable"],
+    description: "Premium noise-cancelling headphones with exceptional sound quality and comfort.",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=400&fit=crop",
+  },
+  {
+    id: 16,
+    name: "PlayStation 5 Slim Console",
+    slug: "playstation-5-slim",
+    category: "gaming",
+    brand: "Sony",
+    price: 54999,
+    originalPrice: null,
+    rating: 4.9,
+    reviews: 892,
+    inStock: true,
+    badge: "In Demand",
+    specs: ["1TB SSD", "4K 120fps", "Ray Tracing", "DualSense Controller", "Disc Edition"],
+    description: "Next-gen gaming console with incredible graphics and exclusive game library.",
+    image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=600&h=400&fit=crop",
+  },
+];
+
+export const getProductBySlug = (slug) => products.find((p) => p.slug === slug);
+
+export const getProductsByCategory = (category) =>
+  category ? products.filter((p) => p.category === category) : products;
+
+export const getFeaturedProducts = () => products.filter((p) => p.badge).slice(0, 5);
+
+export const getGamingProducts = () =>
+  products
+    .filter(
+      (p) =>
+        p.category === "gaming" ||
+        /gaming|rog|rtx|playstation|g pro/i.test(p.name)
+    )
+    .slice(0, 5);
+
+export const getNewArrivals = () => {
+  const tagged = products.filter((p) =>
+    ["New", "In Demand", "Premium", "Hot Deal"].includes(p.badge)
+  );
+  const rest = products.filter((p) => !tagged.includes(p));
+  return [...tagged, ...rest].slice(0, 5);
+};
+
+export const getComponentProducts = () =>
+  products.filter((p) => p.category === "components").slice(0, 5);
+
+export const searchProducts = (query) => {
+  const q = query.toLowerCase().trim();
+  if (!q) return products;
+  return products.filter(
+    (p) =>
+      p.name.toLowerCase().includes(q) ||
+      p.brand.toLowerCase().includes(q) ||
+      p.category.toLowerCase().includes(q) ||
+      p.specs.some((s) => s.toLowerCase().includes(q))
+  );
+};
