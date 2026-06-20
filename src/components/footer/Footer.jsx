@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 import { Phone, Mail, MapPin, Share2, Globe, Video } from "lucide-react";
 
+import logo from  '../../assets/cs.png'
+
 const Footer = () => {
   const shopLinks = [
     { label: "Laptops", to: "/shop?category=laptops" },
@@ -24,8 +26,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-brand text-white font-black text-lg px-2 py-0.5 rounded">RS</div>
-              <span className="font-bold">Computer Shop</span>
+              <div ><img src={logo} alt="" className=" rounded w-12 h-12" /> </div>
+              <span className="font-bold text-2xl">Creative Source</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Bangladesh's trusted computer store since 2020. Genuine products, expert advice,

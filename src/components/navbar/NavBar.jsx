@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router";
 import { Search, MapPin, ShoppingCart, User, Menu, X } from "lucide-react";
 import { BsLightning } from "react-icons/bs";import { useCart } from "../../context/CartContext";
 import { categories } from "../../data/products";
+import logo1 from '../../assets/cs.png'
 
 const NavBar = () => {
   const { cartCount } = useCart();
@@ -23,12 +24,8 @@ const NavBar = () => {
     <header className="w-full font-sans bg-dark text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-3 shrink-0">
-          <div className="flex items-center bg-brand text-white font-black text-xl px-2.5 py-1 rounded tracking-tighter">
-            RS
-          </div>
-          <div className="hidden sm:block text-gray-400 text-xs border-l border-gray-700 pl-3 uppercase tracking-wider font-semibold">
-            Computer Shop
-          </div>
+          <div ><img src={logo1} alt="" className=" rounded w-12 h-12" /> </div>
+                        <span className="font-bold text-2xl">Creative Source</span>
         </Link>
 
         <form onSubmit={handleSearch} className="flex-1 max-w-2xl relative hidden md:block">
